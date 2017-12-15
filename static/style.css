@@ -1,0 +1,201 @@
+@font-face {
+    font-family: 'gidoleregular';
+    src: url('https://gidole.github.io/fonts/Gidole.woff') format('woff'), url('https://gidole.github.io/fonts/Gidole.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: optional;
+}
+@font-face {
+    font-family: 'gidolemono';
+    src: url('https://gidole.github.io/fonts/Gidole-Mono.woff') format('woff'), url('https://gidole.github.io/fonts/Gidole-Mono.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'gidoleregular', sans-serif;
+    line-height: 1.5em;
+    margin: 0;
+}
+
+p,
+.map {
+    margin: 1.5em 0;
+}
+
+.headline {
+    margin: 2em 0 1em;
+}
+
+.first-letter-highlight::first-letter {
+    font-size: 3.1em;
+    float: left;
+    padding-top: 0.24em;
+    padding-right: .15em;
+    font-weight: bold;
+}
+
+.wrap {
+    width: 100%;
+    max-width: 40em;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.page_header {
+    position: relative;
+    padding-top: 5%;
+    background: #db0000;
+    line-height: 2.5em;}
+    .page_header .site-title {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      text-align: center;
+      overflow: hidden;
+      margin-bottom: -10%; }
+    .page_header .title {
+      display: block;
+      margin-top: 5%;
+      font-size: 2.3em;
+      font-weight: 700; }
+      @media screen and (min-width: 640px) {
+          .page_header .title {
+              font-size: 2.5em; } }
+        @media screen and (min-width: 1024px) {
+        .page_header .title {
+            font-size: 2.7em; } }
+    .page_header .skyline,
+    .page_header .header-logo {
+      display: block;
+      fill: #fff; }
+    .page_header .skyline {
+        display: block;
+        width: 100%;
+        height: 100%;
+        fill: #fff; }
+    .page_header .header-logo {
+        margin: 0 auto;
+        width: 20%;
+        height: 30%;
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+.map {
+    width: 100%;
+    padding-top: 100%;}
+    @media screen and (min-width: 640px) {
+        .map {padding-top: 50%; } }
+    .map .placeholder-img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .map .placeholder-img img {
+        width: 100%;
+    }
+
+.page_footer {
+    padding: 1em 0;
+    background-color: #db0000;
+    color: #fff;
+}
+
+.slider {
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+.frame {
+    /**
+     * (optional) wrapper width, specifies width of the slider frame.
+     */
+    width: 100%;
+
+    position: relative;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.slides {
+    display: block;
+    padding: 0;
+    list-style: none;
+}
+
+.slides li {
+    position: relative;
+    display: inline-block;
+
+    /**
+     * (optional) if the content inside the slide element has a defined size.
+     */
+    width: 100%;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    display: block;
+    cursor: pointer;
+    fill: #fff;
+}
+
+.next {
+    right: 0;
+}
+
+.prev {
+    left: 0;
+}
+
+.next svg, .prev svg {
+    width: 25px;
+}
+
+.slides li {
+    z-index: 0;
+    text-align: center;
+    background-size: 0;
+    padding-top: 66.66%;
+}
+
+.slides li::before {
+    z-index: -1;
+    display: block;
+    content: '';
+    background-image: inherit;
+    background-size: cover;
+    filter: blur(20px);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+.slides li img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+
+    max-width: 100%;
+    width: auto;
+    max-height: 100%;
+    height: auto;
+}
