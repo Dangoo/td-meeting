@@ -1,0 +1,16 @@
+{
+  "name": "td-treffen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.16.2",
+    "svg-path-bounds": "^1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Daniel Gooß",
+  "license": "MIT"
+}

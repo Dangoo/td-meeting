@@ -1,3 +1,7 @@
+---
+title: Blogging Like a Hacker
+---
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,75 +10,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>TD-Treffen Hamburg 2018</title>
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link rel="apple-touch-icon" href="touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-152x152.png">
+    <link rel="mask-icon" href="icon.svg" color="#ff0000">
+    
     <link rel="stylesheet" href="static/style.css">
 </head>
 
 <body>
-    <header class="page_header">
-        <div class="wrap">
-            <a class="site-title" href="/">
-                <svg class="header-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 60">
-                    <use xlink:href="static/td_logo.svg#logo" href="static/td_logo.svg#logo"></use>
-                </svg>
-                <span class="title">Hamburg 2018</span>
-                <span>31. August - 02. September</span>
-            </a>
-            <svg class="skyline" viewBox="0 0 2347 738" preserveAspectRatio="xMidYMid meet" width="640" height="201">
-                <use xlink:href="static/skyline_hh.svg#skyline" href="static/skyline_hh.svg#skyline"></use>
-            </svg>
-        </div>
-    </header>
+    {% include templates/header.html %}
     <main>
         <div class="wrap">
-            <h1 class="headline">Moin, moin!</h1>
-            <p class="first-letter-highlight">Hamburg ipsum dolor, sit amet consectetur adipisicing elit. Expedita distinctio vero quae aspernatur eum quidem
-                corporis sequi unde repellendus temporibus, incidunt, perspiciatis id explicabo consectetur aliquid eius
-                porro ex quo.</p>
+            {% capture opener %}{% include opener.md %}{% endcapture %}
+            {{ opener | markdownify }}
 
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita distinctio vero quae aspernatur eum quidem
-                corporis sequi unde repellendus temporibus, incidunt, perspiciatis id explicabo consectetur aliquid eius
-                porro ex quo.</p>
+            {% include templates/city.html %}
 
-            <h2 class="headline">Die Stadt</h2>
-            <div class="map" id="map">
-                <noscript>
-                    <picture class="placeholder-img">
-                        <source srcset="https://maps.googleapis.com/maps/api/staticmap?center=Rathaus,Hamburg&zoom=13&size=640x640&scale=1&maptype=roadmap"
-                            media="(max-width: 600px)" />
-                        <img src="https://maps.googleapis.com/maps/api/staticmap?center=Bahnhof+Altona,Hamburg&zoom=11&size=640x320&scale=1&maptype=roadmap"
-                            alt="" width="640" />
-                    </picture>
-                </noscript>
-            </div>
-
-            <h2 class="headline">Das Hotel</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita distinctio vero quae aspernatur eum quidem
-                corporis sequi unde repellendus temporibus, incidunt, perspiciatis id explicabo consectetur aliquid eius
-                porro ex quo.</p>
-
-            <div class="slider js_slider">
-                <noscript>
-                    Da wir die Bilder von Google beziehen und diese nicht auf der Seite einbinden dürfen, nutzen wir zum Anfordern der Sourcen
-                    Javascript. Aktiviere also bitte JavaScript in deinem Browser oder schaue dir die Bilder hier an:
-                    <a href="https://maps.google.com/maps/contrib/114791843020078364552/photos">Hotel-Hamburg-Altona</a>
-                </noscript>
-                <div class="frame js_frame"></div>
-                <span class="js_prev prev">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5">
-                        <path d="M302.67 90.877l55.77 55.508L254.575 250.75 358.44 355.116l-55.77 55.506L143.56 250.75z" />
-                    </svg>
-                </span>
-                <span class="js_next next">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5">
-                        <path d="M199.33 410.622l-55.77-55.508L247.425 250.75 143.56 146.384l55.77-55.507L358.44 250.75z" />
-                    </svg>
-                </span>
-            </div>
+            {% include templates/hotel.html %}
         </div>
     </main>
-    <footer class="page_footer">
-        <div class="wrap">© Trainzdepot 2017</div>
-    </footer>
+    {% include templates/footer.html %}
 
     <script>
         var map;
