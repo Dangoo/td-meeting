@@ -26,6 +26,13 @@ p,
     margin: 1.5em 0;
 }
 
+ul:not([class]) {
+    list-style-position: inside;
+    padding: 0;
+    column-count: 2;
+    column-gap: 2em;
+}
+
 .headline {
     margin: 2em 0 1em;
     font-weight: 600;
@@ -62,7 +69,7 @@ p,
       display: block;
       margin-top: 5%;
       font-size: 2.3em;
-      font-weight: 700; }
+      font-weight: 500; }
       @media screen and (min-width: 640px) {
           .page_header .title {
               font-size: 2.5em; } }
@@ -115,12 +122,16 @@ p,
     margin: 1em 0;
 }
 
+.roomtype--icon {
+    width: 30%;
+}
+
 .room {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: calc(50% - 1em);
+    width: calc(50% - .5em);
     flex-basis: 50%;
     border: 1px solid #ccc;
     padding: 2em 1em 0;
@@ -128,11 +139,11 @@ p,
 }
 
 .room--single {
-    margin-right: 1em;
+    margin-right: .5em;
 }
 
 .room--double {
-    margin-left: 1em;
+    margin-left: .5em;
 }
 
 .roomdetail {
