@@ -208,7 +208,7 @@ ul:not([class]) {
     }
     .form-field__input + .form-field__input,
     .form-field__input:not(:last-of-type) {
-        width: calc(50% - .5em);
+        min-width: 20%;
         flex-basis: calc(50% - .5em);}
     .form-field__input + .form-field__input {
         margin-left: 1em;}
@@ -216,7 +216,6 @@ ul:not([class]) {
         flex-basis: 60%;}
         .form-field__input + .form-field__input,
         .form-field__input:not(:last-of-type) {
-            width: calc(30% - .5em);
             flex-basis: calc(30% - .5em);}
     
     }
