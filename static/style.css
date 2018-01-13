@@ -21,6 +21,20 @@ a:hover {
     color: #db0000;
 }
 
+.button,
+a.button {
+    cursor: pointer; 
+    padding: 1em;
+    border: 0;
+    font-size: inherit;
+    font-family: inherit;
+    text-decoration: none;
+    color: #fff;}
+    .button--primary {
+        background-color: #db0000;}
+    .button--secondary {
+        background-color: #ccc;}
+
 p,
 .map {
     margin: 1.5em 0;
@@ -36,6 +50,7 @@ ul:not([class]) {
 .headline {
     margin: 2em 0 1em;
     font-weight: 600;
+    line-height: 1.35em;
 }
 
 .first-letter-highlight::first-letter {
@@ -156,6 +171,64 @@ ul:not([class]) {
     display: block;
     padding: .25em;
 }
+
+/* Form */
+.form {}
+
+.form-field {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    margin-bottom: 1em;
+}
+
+.form-field__label {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 100%;}
+    @media screen and (min-width: 640px) {.form-field__label {
+        flex-basis: 40%;
+        padding-top: .25em;
+    }}
+
+.form-field__input {
+    height: 2em;
+    flex-basis: 100%;
+    border: 1px solid #ccc;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    padding: 0 .5em;
+    margin: 0}
+    textarea.form-field__input {
+        height: auto;
+    }
+    .form-field__input + .form-field__input,
+    .form-field__input:not(:last-of-type) {
+        width: calc(50% - .5em);
+        flex-basis: calc(50% - .5em);}
+    .form-field__input + .form-field__input {
+        margin-left: 1em;}
+    @media screen and (min-width: 640px) {.form-field__input {
+        flex-basis: 60%;}
+        .form-field__input + .form-field__input,
+        .form-field__input:not(:last-of-type) {
+            width: calc(30% - .5em);
+            flex-basis: calc(30% - .5em);}
+    
+    }
+
+.form-field__hint {
+    color: #999;}
+    @media screen and (min-width: 640px) {.form-field__hint {
+        margin-left: 40%;
+    }}
+    .form-field__hint p:first-of-type {
+        margin-top: .5em;
+    }
 
 /* Slider */
 .slider {

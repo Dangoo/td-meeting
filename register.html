@@ -1,5 +1,5 @@
 ---
-title: TD-Treffen Hamburg 2018
+title: Anmeldung TD-Treffen Hamburg 2018
 ---
 
 <!DOCTYPE html>
@@ -30,33 +30,10 @@ title: TD-Treffen Hamburg 2018
     {% include templates/header.html %}
     <main>
         <div class="wrap">
-            {% capture opener %}{% include opener.md %}{% endcapture %}
-            {{ opener | markdownify }}
-
-            {% include templates/city.html %}
-
-            {% include templates/hotel.html %}
-            {% include templates/application_hint.html %}
+            {% include templates/registration.html %}
         </div>
-
     </main>
     {% include templates/footer.html %}
-
-    <script>
-        var map;
-        function initMap() {
-            map = new google.maps.Map(document.getElementById('map'), {
-                center: { lat: 53.5600639, lng: 9.9255986 },
-                zoom: 11,
-                streetViewControl: false,
-                mapTypeControl: false
-            });
-        }
-    </script>
-    <script src="static/index.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuGK6Nf1wlZmRhE4eHwVikL7shzmZhj48&callback=initMap" async
-        defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lory.js/2.3.4/lory.min.js"></script>
 </body>
 
 </html>
