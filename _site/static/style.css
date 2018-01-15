@@ -196,30 +196,34 @@ ul:not([class]) {
 
 .form-field__input {
     height: 2em;
-    flex-basis: 100%;
     border: 1px solid #ccc;
     font-family: inherit;
     font-size: inherit;
     color: inherit;
     padding: 0 .5em;
     border-radius: 0;
+    box-shadow: none;
     margin: 0}
+    .form-field__input:not(select):not([type=checkbox]):not([type=date]):not([type=time]:not([type=number])) {
+        -webkit-appearance: none}
+    .form-field__input:not([type=checkbox]) {
+        width: 100%;
+        flex-basis: 100%}
     textarea.form-field__input {
         height: auto;
     }
     .form-field__input + .form-field__input,
     .form-field__input:not(:last-of-type) {
-        width: calc(50% - .5em);
-        min-width: 20%;
-        flex-basis: calc(50% - .5em);}
+        flex-basis: calc(42% - .5em);
+        flex-grow: 1;}
     .form-field__input + .form-field__input {
         margin-left: 1em;}
-    @media screen and (min-width: 640px) {.form-field__input {
-        flex-basis: 60%;}
+    @media screen and (min-width: 640px) {
+        .form-field__input:not([type=checkbox]) {
+            flex-basis: 60%;}
         .form-field__input + .form-field__input,
         .form-field__input:not(:last-of-type) {
-            width: calc(30% - .5em);
-            flex-basis: calc(30% - .5em);}
+            flex-basis: calc(27% - .5em);}
     
     }
 
