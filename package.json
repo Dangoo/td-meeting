@@ -9,7 +9,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "serve:jekyll": "bundle exec jekyll serve"
   },
   "author": "Daniel Gooß",
   "license": "MIT"

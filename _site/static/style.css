@@ -204,7 +204,7 @@ ul:not([class]) {
     border-radius: 0;
     box-shadow: none;
     margin: 0}
-    .form-field__input:not(select):not([type=checkbox]):not([type=date]):not([type=time]:not([type=number])) {
+    .form-field__input:not(select):not([type=checkbox]) {
         -webkit-appearance: none}
     .form-field__input:not([type=checkbox]) {
         width: 100%;
@@ -214,6 +214,8 @@ ul:not([class]) {
     }
     .form-field__input + .form-field__input,
     .form-field__input:not(:last-of-type) {
+        //width: calc(42% - .5em);
+        min-width: 20%;
         flex-basis: calc(42% - .5em);
         flex-grow: 1;}
     .form-field__input + .form-field__input {
@@ -223,6 +225,7 @@ ul:not([class]) {
             flex-basis: 60%;}
         .form-field__input + .form-field__input,
         .form-field__input:not(:last-of-type) {
+            // width: calc(27% - .5em);
             flex-basis: calc(27% - .5em);}
     
     }
