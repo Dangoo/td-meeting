@@ -1,5 +1,5 @@
 <h2 class="headline">Kosten</h2>
-<p class="first-letter-highlight">Die Kosten f&uuml;r das Programm werden bei etwa 100€ pro Person liegen, der genaue Betrag wird noch bekanntgegeben.<br />
+<p>Die Kosten f&uuml;r das Programm werden bei etwa 100€ pro Person liegen, der genaue Betrag wird noch bekanntgegeben.<br />
 Darin enthalten sind:
 <ul class="singlecolumn">
 <Li>Fahrt &uuml;ber die Hafenbahn (Charterzug)</li>
