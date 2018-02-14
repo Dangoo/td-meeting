@@ -164,6 +164,8 @@ ul:not([class]) {
 }
 
 .room--double {
+    margin-left: .5em;
+    margin-right: .5em;
 }
 
 .room--tripple {
