@@ -55,7 +55,7 @@ const photos = [
 ];
 
 function collectFotos(list) {
-    const key = 'AIzaSyAuGK6Nf1wlZmRhE4eHwVikL7shzmZhj48';
+    const key = ' AIzaSyDn83rvM43t_4IZu6nwgTwV5ul_DtqYlfQ';
     const urls = list.map(function (item) {
         return 'https://maps.googleapis.com/maps/api/place/photo?' + 'key=' + key + '&photoreference=' + item['photo_reference'] + '&maxwidth=640&maxheight=426';
     });
