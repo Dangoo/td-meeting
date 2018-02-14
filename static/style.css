@@ -40,6 +40,12 @@ p,
     margin: 1.5em 0;
 }
 
+.singlecolumn {
+    list-style-position: inside;
+    padding: 0;
+    column-count: 1;
+}
+
 ul:not([class]) {
     list-style-position: inside;
     padding: 0;
