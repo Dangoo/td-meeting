@@ -11,4 +11,4 @@ Darin enthalten sind:
 </ul>
 In diesem Betrag nicht enthalten sind Übernachtungskosten, Frühstück, Abendessen Freitag und Besuch und Führung im Miniaturwunderland (optional, wird getrennt berechnet).</p>
 
-<p>Der anfallende Teilnahmebeitrag ist bis zum Anmeldeschluß (25.07.2018) vorab zu zahlen</p>
+<p>Der anfallende Teilnahmebeitrag ist bis zum Anmeldeschluß (20.07.2018) vorab zu zahlen</p>
