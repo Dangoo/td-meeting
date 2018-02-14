@@ -141,6 +141,7 @@ ul:not([class]) {
     list-style: none;
     padding: 0;
     margin: 1em 0;
+    flex-wrap: wrap;
 }
 
 .roomtype--icon {
@@ -154,12 +155,13 @@ ul:not([class]) {
     justify-content: center;
     border: 1px solid #ccc;
     padding: 2em 1em 0;
-    margin: auto;
+    margin: 0 auto 0.5em;
     width: 320px;
     fill: #888;}
     @media screen and (min-width: 640px) {.room {
-        width: calc(33.333% - .75em);
-        flex-basis: 33.333%;
+        width: calc(33.333% - .666em);
+        flex-basis: calc(33.333% - .666em);
+        margin: 0 initial 1em;
     }
 
     .room--single {
