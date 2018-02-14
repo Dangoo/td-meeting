@@ -21,5 +21,5 @@ Aufenthalt auch mit dem PKW möglich ist.
 Hahnenkamp 8<br/>
 D-22765 Hamburg<br/>
 Tel: [+49 (0) 40 / 39 90 89 54](tel:00494039908954)<br/>
-Mail:[info@hotel-hamburg-altona.de](mailto:info@hotel-hamburg-altona.de)<br/>
+Mail: [info@hotel-hamburg-altona.de](mailto:info@hotel-hamburg-altona.de)<br/>
 Web: [www.hotel-hamburg-altona.de](http://www.hotel-hamburg-altona.de)
