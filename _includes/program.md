@@ -21,5 +21,5 @@
 
 <h3 class="headline">Montag (optional)</h3>
 <ul class="singlecolumn">
-  <li><a href="https://www.miniatur-wunderland.de/" title="Miniatur Wunderland" target="_blank">Besuch des Miniaturwunderlandes mit F&uuml;hrung</a></li>
+  <li>Besuch des <a href="https://www.miniatur-wunderland.de/" title="Miniatur Wunderland" target="_blank">Miniaturwunderlandes</a> mit F&uuml;hrung</li>
 </ul>
