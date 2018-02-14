@@ -11,7 +11,7 @@
 <ul class="singlecolumn">
   <li>Etwa zweieinhalbst&uuml;ndige Fahrt mit dem <a href="http://www.hamburg.de/stadtrundfahrt/7844256/hafenbahn-fridolin/" target="_blank" title="Hafenbahn Fridolin">Triebwagen Fridolin</a> &uuml;ber die <a href="https://de.wikipedia.org/wiki/Hamburger_Hafenbahn" title="Hafenbahn Hamburg" target="_blank">Hamburger Hafenbahn</a></li>
   <li>Besuch des Eisenbahnmuseums "<a href="http://www.vvm-museumsbahn.de/ix/ix-start/ix-start.php?id=300" title="Lokschuppen Aum&uuml;hle" target="_blank">Lokschuppen Aum&uuml;hle</a>" und vsl. Abendessen dort</li>
-  <li>Gem&uuml;tliches Beisammensein, Fachsimpeln und Vorträge im Gruppenraum</li>
+  <li>Gem&uuml;tliches Beisammensein, Fachsimpeln und Vortr&auml;ge im Gruppenraum</li>
 </ul>
 
 <h3 class="headline">Sonntag</h3>
