@@ -93,7 +93,7 @@ function appendPhotos(parentNode) {
 function loadDeferedSrc(node) {
     window.requestAnimationFrame(function () {
         node.src = node.dataset.src;
-        node.parentNode.style.backgroundImage = 'url(' + node.dataset.src + ')';
+        node.parentNode.style.backgroundImage = 'url(\'' + node.dataset.src + '\')';
     });
 }
 
