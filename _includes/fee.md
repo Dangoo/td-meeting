@@ -9,6 +9,6 @@ Darin enthalten sind:
 <li>Noch offener Programmpunkt am Sonntag</li>
 <li>Getr&auml;nke und Snacks im Gruppenraum</li>
 </ul>
-In diesem Betrag nicht enthalten sind &Uuml;bernachtungskosten, Fr&uuml;hst&uuml;ck, Abendessen Freitag und Besuch und F&uuml;hrung im Miniaturwunderland (optional, wird getrennt berechnet).</p>
+In diesem Betrag nicht enthalten sind &Uuml;bernachtungskosten, Fr&uuml;hst&uuml;ck, weitere Verpflegung und Besuch und F&uuml;hrung im Miniaturwunderland (optional, wird getrennt berechnet).</p>
 
-<p>Der anfallende Teilnahmebeitrag ist bis zum Anmeldeschlu&szlig; (20.07.2018) vorab zu zahlen</p>
+<p>Der anfallende Teilnahmebeitrag ist bis zum Anmeldeschlu&szlig; (20.07.2018) vorab zu zahlen!</p>
