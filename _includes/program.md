@@ -16,7 +16,10 @@
 
 <h3 class="headline">Sonntag</h3>
 <ul class="singlecolumn">
-<li>Wird noch bekanntgegeben</li>
+<li>Fahrt mit dem Metronom von Hamburg nach L&uuml;neburg</li>
+<li>Fahrt mit dem <a href="http://heide-express.de/" target="_blank">Heide-Express</a> &uuml;ber die <a href="http://de.wikipedia.org/wiki/Bahnstrecke_L%C3%BCneburg%E2%80%93Bleckede" target="_blank">Strecke L&uuml;neburg-Bleckede</a> (Fahrzeug vsl. <a href="http://heide-express.de/index.php/GDT_0518.html" target="_blank">Triebwagen GTD 0518</a>, BJ 1955)</li>
+<li>R&uuml;ckfahrt mit dem Metronom nach Hamburg, nach Absprache ggf. Aufenthalt in L&uuml;neburg</li>
+<li>Zeit f&uuml;r weitere Aktivit&auml;ten, Abreise der Teilnehmer ohne Zusatztag</li>
 </ul>
 
 <h3 class="headline">Montag (optional)</h3>
