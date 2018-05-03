@@ -140,20 +140,24 @@ ul:not([class]) {
         position: relative;
         color: #fff;
         padding: .5em 1em;
-        border: 1px solid transparent;
-        border-bottom-color: #fff;
-        text-decoration: none;
-        transition: .2s ease-in-out;
-        transition-property: height, color, border-color;}
+        text-decoration: none;}
+    .main-nav__link::after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background-color: currentColor;
+        transition: transform .2s ease-in-out;
+        transform-origin: 50% 100%;
+    }
 
-    .main-nav__link.main-nav__link:hover {
-        border-color: #fff;
-        border-radius: 4px;}
-    .main-nav__link.main-nav__link:active,
-    .main-nav__link.main-nav__link--active {
-        color:#db0000;
-        background-color: #fff;
-        border-radius: 4px;}
+    .main-nav__link.main-nav__link:hover::after,
+    .main-nav__link.main-nav__link:active::after,
+    .main-nav__link.main-nav__link--active::after {
+        transform: scaleY(3);}
 
 .map {
     width: 100%;
