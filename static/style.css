@@ -78,7 +78,7 @@ ul:not([class]) {
 
 .page_header {
     position: relative;
-    padding-top: 4%;
+    padding-top: calc(3.5em + 4%);
     background: #db0000;
     line-height: 2.5em;}
     .page_header .site-title {
@@ -115,6 +115,45 @@ ul:not([class]) {
         max-width: 150px;
         max-height: 150px;
     }
+
+.main-nav {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: inherit;}
+
+    .main-nav__list {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        padding: .5em 0;
+        margin: 0;
+    }
+    .main-nav__list-item {
+        
+    }
+    .main-nav__link,
+    .main-nav__link:link,
+    .main-nav__link:visited {
+        position: relative;
+        color: #fff;
+        padding: .5em 1em;
+        border: 1px solid transparent;
+        border-bottom-color: #fff;
+        text-decoration: none;
+        transition: .2s ease-in-out;
+        transition-property: height, color, border-color;}
+
+    .main-nav__link.main-nav__link:hover {
+        border-color: #fff;
+        border-radius: 4px;}
+    .main-nav__link.main-nav__link:active,
+    .main-nav__link.main-nav__link--active {
+        color:#db0000;
+        background-color: #fff;
+        border-radius: 4px;}
 
 .map {
     width: 100%;

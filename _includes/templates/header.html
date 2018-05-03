@@ -1,4 +1,15 @@
 <header class="page_header">
+    <nav class="main-nav">
+        <div class="wrap">
+            <ul class="main-nav__list">
+                {% for item in site.data.navigation.nav %}
+                <li class="main-nav__list-item">
+                    <a href="{{ item.url }}" class="main-nav__link {% if item.url == page.url %}main-nav__link--active{% endif %}">{{item.title}}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </nav>
     <div class="wrap">
         <a class="site-title" href="/">
             <svg class="header-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 73 100">

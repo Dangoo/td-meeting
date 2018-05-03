@@ -26,6 +26,25 @@
 
 <body>
     <header class="page_header">
+    <nav class="main-nav">
+        <div class="wrap">
+            <ul class="main-nav__list">
+                
+                <li class="main-nav__list-item">
+                    <a href="/" class="main-nav__link main-nav__link--active">Startseite</a>
+                </li>
+                
+                <li class="main-nav__list-item">
+                    <a href="/schedule.html" class="main-nav__link ">Programm</a>
+                </li>
+                
+                <li class="main-nav__list-item">
+                    <a href="/register.html" class="main-nav__link ">Anmeldung</a>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
     <div class="wrap">
         <a class="site-title" href="/">
             <svg class="header-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 73 100">
@@ -42,14 +61,21 @@
     <main>
         <div class="wrap">
             
-            <h1 class="headline">Moin, moin!</h1>
-<p class="first-letter-highlight">Hamburg ipsum dolor, sit amet consectetur adipisicing elit. Expedita distinctio vero quae aspernatur eum quidem corporis sequi unde repellendus temporibus, incidunt, perspiciatis id explicabo consectetur aliquid eius porro ex quo.</p>
+            <h1 class="headline">Moin!</h1>
+<p class="first-letter-highlight">Dieses Jahr f&uuml;hrt uns das TrainzDepot-Treffen vom 31. August bis zum 02. September nach Hamburg. Auch f&uuml;r 2018 haben wir uns ein Programm &uuml;berlegt, das f&uuml;r jeden Interessantes beinhalten sollte.</p>
 
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita distinctio vero quae aspernatur eum quidem corporis sequi unde repellendus temporibus, incidunt, perspiciatis id explicabo consectetur aliquid eius porro ex quo.</p>
+<p>In diesem Jahr wird der 03. September (Montag) als optionaler Zusatztag angeboten, geplant ist hierbei ein Besuch des <a href="https://www.miniatur-wunderland.de/" title="Miniatur Wunderland" target="_blank">"Miniatur Wunderland"</a>.</p>
+
+<p>Es ist nicht erforderlich, Mitglied des TrainzDepots zu sein, um am Treffen teilnehmen zu können. Generell ist jeder willkommen, der Interesse an Trainz oder Eisenbahnsimulationen hat, auch Freunde anderer Simulatoren, die einen Blick über den Tellerrand wagen möchten.
+</p>
 
 
             
 <h2 class="headline">Die Stadt</h2>
+<p class="first-letter-highlight">Hamburg ist mit ca. 1,8 Millionen Einwohnern die zweitgr&ouml;ßte Stadt Deutschlands, zugleich auch eine der gr&ouml;&szlig;ten St&auml;dte Europas und stellt zugleich auch ein eigenes Bundesland in Deutschland dar.
+Bekannt ist Hamburg vor allem auch f&uuml;r seinen Hafen, der einer der Gr&ouml;&szlig;ten Europas ist, aber auch dar&uuml;ber hinaus ist Hamburg ein Verkehrsknotenpunkt.</p>
+
+<p>Dazu z&auml;hlt Hamburg auch als gr&ouml;&szlig;ter Eisenbahn-Knotenpunkt Nordeuropas und blickt seit der ersten Strecke im Jahre 1842 auf eine lange Eisenbahngeschichte zur&uuml;ck. Der &ouml;ffentliche Schienennahverkehr wird innerhalb der Stadt vor allem durch S-Bahn und U-Bahn (Hochbahn) gestemmt (neben Bussen), es verkehren nat&uuml;rlich auch Regionalbahnen und Regionalexpress-Z&uuml;ge, dar&uuml;ber hinaus fahren Schnellbahnen der AKN in die n&ouml;rdlichen Vororte.</p>
 
 
 <div class="map" id="map">
@@ -109,7 +135,7 @@ Aufenthalt auch mit dem PKW möglich ist.</p>
 Hahnenkamp 8<br />
 D-22765 Hamburg<br />
 Tel: <a href="tel:00494039908954">+49 (0) 40 / 39 90 89 54</a><br />
-Mail:<a href="mailto:info@hotel-hamburg-altona.de">info@hotel-hamburg-altona.de</a><br />
+Mail: <a href="mailto:info@hotel-hamburg-altona.de">info@hotel-hamburg-altona.de</a><br />
 Web: <a href="http://www.hotel-hamburg-altona.de">www.hotel-hamburg-altona.de</a></p>
 
 
@@ -122,7 +148,8 @@ Web: <a href="http://www.hotel-hamburg-altona.de">www.hotel-hamburg-altona.de</a
         <p class="roomdetail">
             <strong>Einzelzimmer:</strong>
             <br />
-            <span class="roomprice">60 €</span> pro Nacht, exkl. Frühstück</p>
+            <span class="roomprice">60 €</span> pro Nacht, exkl. Frühstück<br />
+            <i>120 € pro Person für 2 Nächte</i></p>
     </li>
     <li class="room room--double">
         <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 80 80" class="roomtype--icon">
@@ -132,12 +159,55 @@ Web: <a href="http://www.hotel-hamburg-altona.de">www.hotel-hamburg-altona.de</a
         <p class="roomdetail">
             <strong>Doppelzimmer:</strong>
             <br />
-            <span class="roomprice">85 €</span> pro Nacht, exkl. Frühstück</p>
+            <span class="roomprice">85 €</span> pro Nacht, exkl. Frühstück
+        <br />
+            <i>85 € pro Person für 2 Nächte</i></p>
+    </li>
+        <li class="room room--tripple">
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 80 80" class="roomtype--icon">
+            <path fill-rule="evenodd" d="M61.912 56.011v5.024H18.18V55.03a4.868 4.868 0 0 1 4.863-4.863H57.05a4.869 4.869 0 0 1 4.862 4.863v.981zM22.941 15.955a4.78 4.78 0 0 1 4.774-4.775h24.662a4.78 4.78 0 0 1 4.775 4.775V30.7h-4.886c.01-.135.02-.27.02-.407v-6.12a4.836 4.836 0 0 0-4.83-4.83h-14.82a4.836 4.836 0 0 0-4.83 4.83v6.12c0 .137.01.272.02.407h-4.885V15.955zm41.41 35.722l-3.714-19.682a1.582 1.582 0 0 0-.305-.67v-15.37c0-4.386-3.568-7.955-7.954-7.955H27.715c-4.386 0-7.955 3.57-7.955 7.955v15.37a1.582 1.582 0 0 0-.304.67l-3.714 19.682A7.98 7.98 0 0 0 15 55.03v16.3h3.18v-7.114h43.732v7.114h3.18v-16.3a7.98 7.98 0 0 0-.741-3.353z"
+            />
+        </svg>        <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 80 80" class="roomtype--icon">
+            <path fill-rule="evenodd" d="M61.912 56.011v5.024H18.18V55.03a4.868 4.868 0 0 1 4.863-4.863H57.05a4.869 4.869 0 0 1 4.862 4.863v.981zM22.941 15.955a4.78 4.78 0 0 1 4.774-4.775h24.662a4.78 4.78 0 0 1 4.775 4.775V30.7h-4.886c.01-.135.02-.27.02-.407v-6.12a4.836 4.836 0 0 0-4.83-4.83h-14.82a4.836 4.836 0 0 0-4.83 4.83v6.12c0 .137.01.272.02.407h-4.885V15.955zm41.41 35.722l-3.714-19.682a1.582 1.582 0 0 0-.305-.67v-15.37c0-4.386-3.568-7.955-7.954-7.955H27.715c-4.386 0-7.955 3.57-7.955 7.955v15.37a1.582 1.582 0 0 0-.304.67l-3.714 19.682A7.98 7.98 0 0 0 15 55.03v16.3h3.18v-7.114h43.732v7.114h3.18v-16.3a7.98 7.98 0 0 0-.741-3.353z"
+            />
+        </svg>        <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 80 80" class="roomtype--icon">
+            <path fill-rule="evenodd" d="M61.912 56.011v5.024H18.18V55.03a4.868 4.868 0 0 1 4.863-4.863H57.05a4.869 4.869 0 0 1 4.862 4.863v.981zM22.941 15.955a4.78 4.78 0 0 1 4.774-4.775h24.662a4.78 4.78 0 0 1 4.775 4.775V30.7h-4.886c.01-.135.02-.27.02-.407v-6.12a4.836 4.836 0 0 0-4.83-4.83h-14.82a4.836 4.836 0 0 0-4.83 4.83v6.12c0 .137.01.272.02.407h-4.885V15.955zm41.41 35.722l-3.714-19.682a1.582 1.582 0 0 0-.305-.67v-15.37c0-4.386-3.568-7.955-7.954-7.955H27.715c-4.386 0-7.955 3.57-7.955 7.955v15.37a1.582 1.582 0 0 0-.304.67l-3.714 19.682A7.98 7.98 0 0 0 15 55.03v16.3h3.18v-7.114h43.732v7.114h3.18v-16.3a7.98 7.98 0 0 0-.741-3.353z"
+            />
+        </svg>
+            </div>
+        <p class="roomdetail">
+            <strong>Dreibettzimmer:</strong>
+            <br />
+            <span class="roomprice">100 €</span> pro Nacht, exkl. Frühstück
+            <br />
+            <i>67 € pro Person für 2 Nächte</i></p>
     </li>
 </ul>
+Frühstück kostet pro Person&Tag 8€.
+
+            
+            
+<h2 class="headline">Kosten</h2>
+<p>Die Kosten f&uuml;r das Programm werden bei etwa 100€ pro Person liegen, der genaue Betrag wird noch bekanntgegeben.<br />
+Darin enthalten sind:
+<ul class="singlecolumn">
+<li>Fahrt &uuml;ber die Hafenbahn (Charterzug)</li>
+<li>Besuch des Eisenbahnmuseums Aum&uuml;hle mit Abendessen (vsl.)</li>
+<li>Fahrt mit dem Heide-Express L&uuml;neburg-Bleckede</li>
+<li>Gruppenraum</li>
+<li>Getr&auml;nke und Snacks im Gruppenraum</li>
+<li>Alle Nahverkehrsfahrkarten, die f&uuml;r die Programmpunkte ben&ouml;tigt werden</li>
+</ul>
+In diesem Betrag nicht enthalten sind &Uuml;bernachtungskosten, Fr&uuml;hst&uuml;ck, weitere Verpflegung und Besuch und F&uuml;hrung im Miniaturwunderland (optional, wird getrennt berechnet).</p>
+
+<p>Der anfallende Teilnahmebeitrag ist bis zum Anmeldeschlu&szlig; (20.07.2018) vorab zu zahlen!</p>
+
+            
+            
             
 <h2 class="headline">Anmeldung</h2>
-<p>Für das TD-Treffen 2018 in Hamburg könnt ihr euch hier verbindlich anmelden.</p>
+<p>Für das TD-Treffen 2018 in Hamburg könnt ihr euch hier verbindlich anmelden, der Anmeldeschluß ist der 20. Juli 2018.</p>
 
 
 <a href="register" class="button button--primary">Zur Anmeldung</a>
@@ -160,9 +230,25 @@ Web: <a href="http://www.hotel-hamburg-altona.de">www.hotel-hamburg-altona.de</a
         }
     </script>
     <script src="static/index.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuGK6Nf1wlZmRhE4eHwVikL7shzmZhj48&callback=initMap" async
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDn83rvM43t_4IZu6nwgTwV5ul_DtqYlfQ&callback=initMap" async
         defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lory.js/2.3.4/lory.min.js"></script>
+    <!-- Matomo -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//stat.zoller.it/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '4']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//stat.zoller.it/piwik.php?idsite=4&rec=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Matomo Code -->
 </body>
 
 </html>

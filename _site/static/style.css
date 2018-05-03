@@ -40,9 +40,17 @@ p,
     margin: 1.5em 0;
 }
 
+.singlecolumn {
+    list-style-position: outside;
+    list-style-type: circle;
+    padding: 0 0 0 1.5em;
+    column-count: 1;
+}
+
 ul:not([class]) {
-    list-style-position: inside;
-    padding: 0;
+    list-style-position: outside;
+    list-style-type: circle;
+    padding: 0 0 0 1.5em;
     column-count: 2;
     column-gap: 2em;
 }
@@ -70,7 +78,7 @@ ul:not([class]) {
 
 .page_header {
     position: relative;
-    padding-top: 4%;
+    padding-top: calc(3.5em + 4%);
     background: #db0000;
     line-height: 2.5em;}
     .page_header .site-title {
@@ -108,6 +116,45 @@ ul:not([class]) {
         max-height: 150px;
     }
 
+.main-nav {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: inherit;}
+
+    .main-nav__list {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        padding: .5em 0;
+        margin: 0;
+    }
+    .main-nav__list-item {
+        
+    }
+    .main-nav__link,
+    .main-nav__link:link,
+    .main-nav__link:visited {
+        position: relative;
+        color: #fff;
+        padding: .5em 1em;
+        border: 1px solid transparent;
+        border-bottom-color: #fff;
+        text-decoration: none;
+        transition: .2s ease-in-out;
+        transition-property: height, color, border-color;}
+
+    .main-nav__link.main-nav__link:hover {
+        border-color: #fff;
+        border-radius: 4px;}
+    .main-nav__link.main-nav__link:active,
+    .main-nav__link.main-nav__link--active {
+        color:#db0000;
+        background-color: #fff;
+        border-radius: 4px;}
+
 .map {
     width: 100%;
     padding-top: 100%;}
@@ -135,6 +182,7 @@ ul:not([class]) {
     list-style: none;
     padding: 0;
     margin: 1em 0;
+    flex-wrap: wrap;
 }
 
 .roomtype--icon {
@@ -146,19 +194,29 @@ ul:not([class]) {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: calc(50% - .5em);
-    flex-basis: 50%;
     border: 1px solid #ccc;
     padding: 2em 1em 0;
-    fill: #888;
-}
+    margin: 0 auto 0.5em;
+    width: 320px;
+    fill: #888;}
+    @media screen and (min-width: 640px) {.room {
+        width: calc(33.333% - .666em);
+        flex-basis: calc(33.333% - .666em);
+        margin: 0 initial 1em;
+    }
 
-.room--single {
-    margin-right: .5em;
-}
+    .room--single {
+        margin-right: .5em;
+    }
 
-.room--double {
-    margin-left: .5em;
+    .room--double {
+        margin-left: .5em;
+        margin-right: .5em;
+    }
+
+    .room--tripple {
+        margin-left: .5em;
+    }
 }
 
 .roomdetail {

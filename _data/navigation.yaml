@@ -1,0 +1,10 @@
+nav:
+
+- title: Startseite
+  url: /
+
+- title: Programm
+  url: /schedule.html
+
+- title: Anmeldung
+  url: /register.html

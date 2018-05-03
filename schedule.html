@@ -14,16 +14,7 @@ title: TD-Treffen Hamburg 2018
     {% include templates/header.html %}
     <main>
         <div class="wrap">
-            {% capture opener %}{% include opener.md %}{% endcapture %}
-            {{ opener | markdownify }}
-
-            {% include templates/city.html %}
-
-            {% include templates/hotel.html %}
-            
-            {% include templates/fee.html %}            
-            
-            {% include templates/application_hint.html %}
+            {% include templates/program.html %}
         </div>
 
     </main>

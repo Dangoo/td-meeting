@@ -55,7 +55,7 @@ const photos = [
 ];
 
 function collectFotos(list) {
-    const key = 'AIzaSyDn83rvM43t_4IZu6nwgTwV5ul_DtqYlfQ';
+    const key = ' AIzaSyDn83rvM43t_4IZu6nwgTwV5ul_DtqYlfQ';
     const urls = list.map(function (item) {
         return 'https://maps.googleapis.com/maps/api/place/photo?' + 'key=' + key + '&photoreference=' + item['photo_reference'] + '&maxwidth=640&maxheight=426';
     });
@@ -93,7 +93,7 @@ function appendPhotos(parentNode) {
 function loadDeferedSrc(node) {
     window.requestAnimationFrame(function () {
         node.src = node.dataset.src;
-        node.parentNode.style.backgroundImage = 'url(' + node.dataset.src + ')';
+        node.parentNode.style.backgroundImage = 'url(\'' + node.dataset.src + '\')';
     });
 }
 
