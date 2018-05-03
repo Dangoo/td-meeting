@@ -41,14 +41,16 @@ p,
 }
 
 .singlecolumn {
-    list-style-position: inside;
-    padding: 0;
+    list-style-position: outside;
+    list-style-type: circle;
+    padding: 0 0 0 1.5em;
     column-count: 1;
 }
 
 ul:not([class]) {
-    list-style-position: inside;
-    padding: 0;
+    list-style-position: outside;
+    list-style-type: circle;
+    padding: 0 0 0 1.5em;
     column-count: 2;
     column-gap: 2em;
 }
