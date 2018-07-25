@@ -1,2 +1,14 @@
 {% capture program %}{% include program.md %}{% endcapture %}
+
+<div class="map" id="map">
+    <noscript>
+        <picture class="placeholder-img">
+            <source srcset="https://maps.googleapis.com/maps/api/staticmap?center=Rathaus,Hamburg&zoom=13&size=640x640&scale=1&maptype=roadmap"
+                media="(max-width: 600px)" />
+            <img src="https://maps.googleapis.com/maps/api/staticmap?center=Bahnhof+Altona,Hamburg&zoom=11&size=640x320&scale=1&maptype=roadmap"
+                alt="" width="640" />
+        </picture>
+    </noscript>
+</div>
+
 {{ program | markdownify }}
