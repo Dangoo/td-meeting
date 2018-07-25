@@ -21,36 +21,149 @@ title: TD-Treffen Hamburg 2018
     {% include templates/footer.html %}
 
     <script>
+        function addInfo (map, marker, info){
+            return function() {
+                info.open(map, marker)
+            }
+        }
+
         var map;
+
         function initMap() {
             map = new google.maps.Map(document.getElementById('map'), {
-                center: { lat: 53.5600639, lng: 9.9255986 },
+                center: {
+                    lat: 53.5437276,
+                    lng: 9.9867191,
+                },
                 zoom: 11,
                 streetViewControl: false,
-                mapTypeControl: false
+                mapTypeControl: false,
             });
+
+            var transitLayer = new google.maps.TransitLayer();
+            transitLayer.setMap(map);
+
+            var markerAumuehle = new google.maps.Marker({
+                position: {
+                    lat: 53.527941,
+                    lng: 10.3111788
+                },
+                map: map,
+                title: 'Lokschuppen Aumühle, Am Mühlenteich',
+                label: '2'
+            });
+
+            var infoAumuehle = new google.maps.InfoWindow({
+                content: markerAumuehle.title
+            });
+
+            var markerHafenbahn = new google.maps.Marker({
+                position: {
+                    lat: 53.5256098,
+                    lng: 10.0003214
+                },
+                map: map,
+                title: 'Hafenbahn, Kopfbauschuppen 50A',
+                label: '1'
+            });
+
+            var infoHafenbahn = new google.maps.InfoWindow({
+                content: markerHafenbahn.title
+            });
+
+            var markerHotel = new google.maps.Marker({
+                position: {
+                    lat: 53.553375,
+                    lng: 9.9336451
+                },
+                map: map,
+                title: 'Hotel Hamburg Altona, Hahnenkamp 8',
+                label: 'A'
+            });
+
+            var infoHotel = new google.maps.InfoWindow({
+                content: markerHotel.title
+            });
+
+            var markerBase = new google.maps.Marker({
+                position: {
+                    lat: 53.557707,
+                    lng: 9.9262338
+                },
+                map: map,
+                title: 'Gruppenraum, Völckersstraße 14',
+                label: 'B'
+            });
+
+            var infoBase = new google.maps.InfoWindow({
+                content: markerBase.title
+            });
+
+            var markerHeideExpress = new google.maps.Marker({
+                position: {
+                    lat: 53.2498976,
+                    lng: 10.4193627
+                },
+                map: map,
+                title: 'HeideExpress',
+                label: '3'
+            });
+
+            var infoHeideExpress = new google.maps.InfoWindow({
+                content: markerHeideExpress.title
+            });
+
+            var markerWunderland = new google.maps.Marker({
+                position: {
+                    lat: 53.5437276,
+                    lng: 9.9867191
+                },
+                map: map,
+                title: 'Miniatur Wunderland',
+                label: '4'
+            });
+
+            var infoWunderland = new google.maps.InfoWindow({
+                content: markerWunderland.title
+            });
+
+            markerAumuehle.addListener('click', addInfo(map, markerAumuehle, infoAumuehle));
+            markerBase.addListener('click', addInfo(map, markerBase, infoBase));
+            markerHafenbahn.addListener('click', addInfo(map, markerHafenbahn, infoHafenbahn));
+            markerHeideExpress.addListener('click', addInfo(map, markerHeideExpress, infoHeideExpress));
+            markerHotel.addListener('click', addInfo(map, markerHotel, infoHotel));
+            markerWunderland.addListener('click', addInfo(map, markerWunderland, infoWunderland));
         }
     </script>
-    <script src="static/index.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDn83rvM43t_4IZu6nwgTwV5ul_DtqYlfQ&callback=initMap" async
         defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lory.js/2.3.4/lory.min.js"></script>
     <!-- Matomo -->
-<script type="text/javascript">
-  var _paq = _paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//stat.zoller.it/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', '4']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<noscript><p><img src="//stat.zoller.it/piwik.php?idsite=4&rec=1" style="border:0;" alt="" /></p></noscript>
-<!-- End Matomo Code -->
+    <script type="text/javascript">
+        var _paq = _paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function () {
+            var u = "//stat.zoller.it/";
+            _paq.push(['setTrackerUrl', u + 'piwik.php']);
+            _paq.push(['setSiteId', '4']);
+            var d = document,
+                g = d.createElement('script'),
+                s = d.getElementsByTagName('script')[0];
+            g.type = 'text/javascript';
+            g.async = true;
+            g.defer = true;
+            g.src = u + 'piwik.js';
+            s.parentNode.insertBefore(g, s);
+        })();
+    </script>
+    <noscript>
+        <p>
+            <img src="//stat.zoller.it/piwik.php?idsite=4&rec=1" style="border:0;" alt="" />
+        </p>
+    </noscript>
+    <!-- End Matomo Code -->
 </body>
 
 </html>

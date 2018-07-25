@@ -19,30 +19,11 @@ title: TD-Treffen Hamburg 2018
 
             {% include templates/city.html %}
 
-            {% include templates/hotel.html %}
-            
-            {% include templates/fee.html %}            
-            
-            {% include templates/application_hint.html %}
+            <a href="schedule" class="button button--primary">Zum Programm</a>
         </div>
 
     </main>
     {% include templates/footer.html %}
-
-    <script>
-        var map;
-        function initMap() {
-            map = new google.maps.Map(document.getElementById('map'), {
-                center: { lat: 53.5600639, lng: 9.9255986 },
-                zoom: 11,
-                streetViewControl: false,
-                mapTypeControl: false
-            });
-        }
-    </script>
-    <script src="static/index.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDn83rvM43t_4IZu6nwgTwV5ul_DtqYlfQ&callback=initMap" async
-        defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lory.js/2.3.4/lory.min.js"></script>
     <!-- Matomo -->
 <script type="text/javascript">

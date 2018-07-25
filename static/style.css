@@ -276,7 +276,7 @@ ul:not([class]) {
     }
     .form-field__input + .form-field__input,
     .form-field__input:not(:last-of-type) {
-        //width: calc(42% - .5em);
+        /* width: calc(42% - .5em); */
         min-width: 20%;
         flex-basis: calc(42% - .5em);
         flex-grow: 1;}
@@ -287,7 +287,7 @@ ul:not([class]) {
             flex-basis: 60%;}
         .form-field__input + .form-field__input,
         .form-field__input:not(:last-of-type) {
-            // width: calc(27% - .5em);
+            /* width: calc(27% - .5em); */
             flex-basis: calc(27% - .5em);}
     
     }

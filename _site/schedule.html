@@ -64,30 +64,30 @@
 
 <h2 class="headline">Das Programm</h2>
 
-<h3 class="headline">Freitag</h3>
+<h3 class="headline"><time datetime="2018-08-31">Freitag, 31.08.2018</time></h3>
 <ul class="singlecolumn">
   <li>Eintreffen der Teilnehmer des Treffens</li>
-  <li>Gem&uuml;tliches Beisammensein, Fachsimpeln und Vorträge (Abendessen nach Absprache) im Gruppenraum</li>
+  <li>Gemütliches Beisammensein, Fachsimpeln und Vorträge (Abendessen nach Absprache) im Gruppenraum (B)</li>
   </ul>
 
-<h3 class="headline">Samstag</h3>
+<h3 class="headline"><time datetime="2018-09-01">Samstag, 01.09.2018</time></h3>
 <ul class="singlecolumn">
-  <li>Etwa zweieinhalbst&uuml;ndige Fahrt mit dem <a href="http://www.hamburg.de/stadtrundfahrt/7844256/hafenbahn-fridolin/" target="_blank" title="Hafenbahn Fridolin">Triebwagen Fridolin</a> &uuml;ber die <a href="https://de.wikipedia.org/wiki/Hamburger_Hafenbahn" title="Hafenbahn Hamburg" target="_blank">Hamburger Hafenbahn</a></li>
-  <li>Besuch des Eisenbahnmuseums "<a href="http://www.vvm-museumsbahn.de/ix/ix-start/ix-start.php?id=300" title="Lokschuppen Aum&uuml;hle" target="_blank">Lokschuppen Aum&uuml;hle</a>" und vsl. Abendessen dort</li>
-  <li>Gem&uuml;tliches Beisammensein, Fachsimpeln und Vortr&auml;ge im Gruppenraum</li>
+  <li>Etwa zweieinhalbstündige Fahrt mit dem <a href="http://www.hamburg.de/stadtrundfahrt/7844256/hafenbahn-fridolin/" target="_blank" title="Hafenbahn Fridolin">Triebwagen Fridolin</a> (1) über die <a href="https://de.wikipedia.org/wiki/Hamburger_Hafenbahn" title="Hafenbahn Hamburg" target="_blank">Hamburger Hafenbahn</a></li>
+  <li>Besuch des Eisenbahnmuseums "<a href="http://www.vvm-museumsbahn.de/ix/ix-start/ix-start.php?id=300" title="Lokschuppen Aumühle" target="_blank">Lokschuppen Aumühle</a>" (2) und vsl. Abendessen dort</li>
+  <li>Gemütliches Beisammensein, Fachsimpeln und Vorträge im Gruppenraum</li>
 </ul>
 
-<h3 class="headline">Sonntag</h3>
+<h3 class="headline"><time datetime="2018-09-02">Sonntag, 02.09.2018</time></h3>
 <ul class="singlecolumn">
-<li>Fahrt mit dem Metronom von Hamburg nach L&uuml;neburg</li>
-<li>Fahrt mit dem <a href="http://heide-express.de/" target="_blank">Heide-Express</a> &uuml;ber die <a href="http://de.wikipedia.org/wiki/Bahnstrecke_L%C3%BCneburg%E2%80%93Bleckede" target="_blank">Strecke L&uuml;neburg-Bleckede</a> (Fahrzeug vsl. <a href="http://heide-express.de/index.php/GDT_0518.html" target="_blank">Triebwagen GTD 0518</a>, BJ 1955)</li>
-<li>R&uuml;ckfahrt mit dem Metronom nach Hamburg, nach Absprache ggf. Aufenthalt in L&uuml;neburg</li>
-<li>Zeit f&uuml;r weitere Aktivit&auml;ten, Abreise der Teilnehmer ohne Zusatztag</li>
+<li>Fahrt mit dem Metronom von Hamburg nach Lüneburg</li>
+<li>Fahrt mit dem <a href="http://heide-express.de/" target="_blank">Heide-Express</a> (3) über die <a href="http://de.wikipedia.org/wiki/Bahnstrecke_L%C3%BCneburg%E2%80%93Bleckede" target="_blank">Strecke Lüneburg-Bleckede</a> (Fahrzeug vsl. <a href="http://heide-express.de/index.php/GDT_0518.html" target="_blank">Triebwagen GTD 0518</a>, BJ 1955)</li>
+<li>Rückfahrt mit dem Metronom nach Hamburg, nach Absprache ggf. Aufenthalt in Lüneburg</li>
+<li>Zeit für weitere Aktivitäten, Abreise der Teilnehmer ohne Zusatztag</li>
 </ul>
 
-<h3 class="headline">Montag (optional)</h3>
+<h3 class="headline"><time datetime="2018-09-03">Montag, 03.09.2018</time> (optional)</h3>
 <ul class="singlecolumn">
-  <li>Besuch des <a href="https://www.miniatur-wunderland.de/" title="Miniatur Wunderland" target="_blank">Miniaturwunderlandes</a> mit F&uuml;hrung</li>
+  <li>Besuch des <a href="https://www.miniatur-wunderland.de/" title="Miniatur Wunderland" target="_blank">Miniaturwunderlandes</a> mit Führung (4)</li>
 </ul>
 
 
@@ -99,36 +99,149 @@
 </footer>
 
     <script>
+        function addInfo (map, marker, info){
+            return function() {
+                info.open(map, marker)
+            }
+        }
+
         var map;
+
         function initMap() {
             map = new google.maps.Map(document.getElementById('map'), {
-                center: { lat: 53.5600639, lng: 9.9255986 },
+                center: {
+                    lat: 53.5437276,
+                    lng: 9.9867191,
+                },
                 zoom: 11,
                 streetViewControl: false,
-                mapTypeControl: false
+                mapTypeControl: false,
             });
+
+            var transitLayer = new google.maps.TransitLayer();
+            transitLayer.setMap(map);
+
+            var markerAumuehle = new google.maps.Marker({
+                position: {
+                    lat: 53.527941,
+                    lng: 10.3111788
+                },
+                map: map,
+                title: 'Lokschuppen Aumühle, Am Mühlenteich',
+                label: '2'
+            });
+
+            var infoAumuehle = new google.maps.InfoWindow({
+                content: markerAumuehle.title
+            });
+
+            var markerHafenbahn = new google.maps.Marker({
+                position: {
+                    lat: 53.5256098,
+                    lng: 10.0003214
+                },
+                map: map,
+                title: 'Hafenbahn, Kopfbauschuppen 50A',
+                label: '1'
+            });
+
+            var infoHafenbahn = new google.maps.InfoWindow({
+                content: markerHafenbahn.title
+            });
+
+            var markerHotel = new google.maps.Marker({
+                position: {
+                    lat: 53.553375,
+                    lng: 9.9336451
+                },
+                map: map,
+                title: 'Hotel Hamburg Altona, Hahnenkamp 8',
+                label: 'A'
+            });
+
+            var infoHotel = new google.maps.InfoWindow({
+                content: markerHotel.title
+            });
+
+            var markerBase = new google.maps.Marker({
+                position: {
+                    lat: 53.557707,
+                    lng: 9.9262338
+                },
+                map: map,
+                title: 'Gruppenraum, Völckersstraße 14',
+                label: 'B'
+            });
+
+            var infoBase = new google.maps.InfoWindow({
+                content: markerBase.title
+            });
+
+            var markerHeideExpress = new google.maps.Marker({
+                position: {
+                    lat: 53.2498976,
+                    lng: 10.4193627
+                },
+                map: map,
+                title: 'HeideExpress',
+                label: '3'
+            });
+
+            var infoHeideExpress = new google.maps.InfoWindow({
+                content: markerHeideExpress.title
+            });
+
+            var markerWunderland = new google.maps.Marker({
+                position: {
+                    lat: 53.5437276,
+                    lng: 9.9867191
+                },
+                map: map,
+                title: 'Miniatur Wunderland',
+                label: '4'
+            });
+
+            var infoWunderland = new google.maps.InfoWindow({
+                content: markerWunderland.title
+            });
+
+            markerAumuehle.addListener('click', addInfo(map, markerAumuehle, infoAumuehle));
+            markerBase.addListener('click', addInfo(map, markerBase, infoBase));
+            markerHafenbahn.addListener('click', addInfo(map, markerHafenbahn, infoHafenbahn));
+            markerHeideExpress.addListener('click', addInfo(map, markerHeideExpress, infoHeideExpress));
+            markerHotel.addListener('click', addInfo(map, markerHotel, infoHotel));
+            markerWunderland.addListener('click', addInfo(map, markerWunderland, infoWunderland));
         }
     </script>
-    <script src="static/index.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDn83rvM43t_4IZu6nwgTwV5ul_DtqYlfQ&callback=initMap" async
         defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lory.js/2.3.4/lory.min.js"></script>
     <!-- Matomo -->
-<script type="text/javascript">
-  var _paq = _paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//stat.zoller.it/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', '4']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<noscript><p><img src="//stat.zoller.it/piwik.php?idsite=4&rec=1" style="border:0;" alt="" /></p></noscript>
-<!-- End Matomo Code -->
+    <script type="text/javascript">
+        var _paq = _paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function () {
+            var u = "//stat.zoller.it/";
+            _paq.push(['setTrackerUrl', u + 'piwik.php']);
+            _paq.push(['setSiteId', '4']);
+            var d = document,
+                g = d.createElement('script'),
+                s = d.getElementsByTagName('script')[0];
+            g.type = 'text/javascript';
+            g.async = true;
+            g.defer = true;
+            g.src = u + 'piwik.js';
+            s.parentNode.insertBefore(g, s);
+        })();
+    </script>
+    <noscript>
+        <p>
+            <img src="//stat.zoller.it/piwik.php?idsite=4&rec=1" style="border:0;" alt="" />
+        </p>
+    </noscript>
+    <!-- End Matomo Code -->
 </body>
 
 </html>
